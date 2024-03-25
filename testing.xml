@@ -1,6 +1,6 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-<suite name="Swoop Tests" parallel="tests" thread-count="2">
+<suite name="Swoop Tests" parallel="tests" thread-count="3">
 
     <test name="Holiday Page Tests">
         <classes>
@@ -30,7 +30,7 @@
         </classes>
     </test>
 
-    <test name="Movie Page Tests">
+    <test name="MoviePageTests">
         <classes>
             <class name="MoviePageTests">
                 <parameter name="browser" value="chrome" />

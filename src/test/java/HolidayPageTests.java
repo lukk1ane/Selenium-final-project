@@ -173,7 +173,8 @@ public class HolidayPageTests {
     }
 
     @Test
-    public void filterTest() throws InterruptedException {
+    public void filterTest() {
+        //fails because wrong values are shown on swoop.
         driver.get(Constants.site1);
         WebElement section = driver.findElement(By.linkText(Constants.dasvenebaString));
         section.click();
@@ -192,7 +193,6 @@ public class HolidayPageTests {
             wait.until(ExpectedConditions.visibilityOf(text));
             String checkText= String.valueOf(text.getText());
             softAssert.assertTrue(checkText.contains("კოტეჯი"));
-
         }
 
         WebElement sortBar = driver.findElement(By.id(Constants.sortingId));
@@ -203,7 +203,6 @@ public class HolidayPageTests {
         wait.until(ExpectedConditions.visibilityOf(sortBar));
         options.selectByValue("2");
 
-        Thread.sleep(5000);
 
         List <WebElement> prices=driver.findElements(By.xpath(Constants.pricesXpathFilter));
 

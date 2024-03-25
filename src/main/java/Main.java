@@ -9,7 +9,7 @@ public class Main {
 
 
     public static String convertRGBToHex(String rgbColor) {
-        String[] rgbValues = rgbColor.replace("rgb(", "").replace(")", "").split(",");
+        String[] rgbValues = rgbColor.replace("rgba(", "").replace(")", "").split(",");
         int r = Integer.parseInt(rgbValues[0].trim());
         int g = Integer.parseInt(rgbValues[1].trim());
         int b = Integer.parseInt(rgbValues[2].trim());
