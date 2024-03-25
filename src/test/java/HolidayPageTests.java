@@ -39,6 +39,9 @@ public class HolidayPageTests {
             WebDriverManager.firefoxdriver().setup();
             driver=new FirefoxDriver();
         }
+
+        driver.manage().window().maximize();
+
     }
 
     @AfterMethod
@@ -47,7 +50,7 @@ public class HolidayPageTests {
     }
 
     @Test
-    public void descendingOrderTest() throws InterruptedException {
+    public void descendingOrderTest(){
         driver.get(Constants.site1);
         WebElement section = driver.findElement(By.linkText(Constants.dasvenebaString));
         section.click();

@@ -33,7 +33,11 @@ public class MoviePageTests {
             WebDriverManager.firefoxdriver().setup();
             driver=new FirefoxDriver();
         }
+
+        driver.manage().window().maximize();
+
     }
+
 
     @AfterMethod
     public void  tearDown(){

@@ -26,6 +26,9 @@ public class LandingPageTests {
             WebDriverManager.firefoxdriver().setup();
             driver=new FirefoxDriver();
         }
+
+        driver.manage().window().maximize();
+
     }
 
     @AfterMethod
