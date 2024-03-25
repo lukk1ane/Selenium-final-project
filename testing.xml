@@ -1,0 +1,47 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Swoop Tests" parallel="tests" thread-count="2">
+
+    <test name="Holiday Page Tests">
+        <classes>
+            <class name="HolidayPageTests">
+                <parameter name="browser" value="chrome" />
+            </class>
+            <class name="HolidayPageTests">
+                <parameter name="browser" value="edge" />
+            </class>
+            <class name="HolidayPageTests">
+                <parameter name="browser" value="firefox" />
+            </class>
+        </classes>
+    </test>
+
+    <test name="Landing Page Tests">
+        <classes>
+            <class name="LandingPageTests">
+                <parameter name="browser" value="chrome" />
+            </class>
+            <class name="LandingPageTests">
+                <parameter name="browser" value="edge" />
+            </class>
+            <class name="LandingPageTests">
+                <parameter name="browser" value="firefox" />
+            </class>
+        </classes>
+    </test>
+
+    <test name="Movie Page Tests">
+        <classes>
+            <class name="MoviePageTests">
+                <parameter name="browser" value="chrome" />
+            </class>
+            <class name="MoviePageTests">
+                <parameter name="browser" value="edge" />
+            </class>
+            <class name="MoviePageTests">
+                <parameter name="browser" value="firefox" />
+            </class>
+        </classes>
+    </test>
+
+</suite>
